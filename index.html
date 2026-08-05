@@ -14,6 +14,17 @@
 
 
 <body>
+  <audio autoplay loop muted id="bgMusic">
+    <source src="bgmusic.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function(){
+    let music = document.getElementById("bgMusic");
+    music.muted = false;
+    music.play();
+});
+</script>
 
 
 <header>
