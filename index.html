@@ -1,278 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>RIDBY OPTIMIZATION</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDBY FPS Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-    <audio id="music" controls>
-    <source src="bgmusic.mp3" type="audio/mpeg">
-</audio>
-
-<button onclick="document.getElementById('music').play()">
-Play Music
-</button>
-
 
 <header>
-
-<h1>🔥 RIDBY OPTIMIZATION</h1>
-
-<nav>
-
-<a href="#home">Home</a>
-<a href="#emulator">Emulator</a>
-<a href="#playbook">Playbook</a>
-<a href="#download">Download</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
+    <h1>🔥 RIDBY FPS Calculator</h1>
+    <p>Free Fire Emulator FPS Calculator</p>
 </header>
 
-
-
-
-<section class="hero" id="home">
-
-<h2>🚀 MSI 5 Optimization Pack</h2>
-
-<p>
-Best Free Fire Emulator Optimization For Smooth FPS And Low Lag Gameplay.
-</p>
-
-<a href="#download" class="btn">
-Download Now
-</a>
-
-</section>
-
-
-
-
-
-<section class="cards" id="emulator">
-
-
-<h1>🎮 Emulator</h1>
-
-
+<div class="container">
 
 <div class="card">
 
-<h2>⚡ MSI 5 Optimize Pack</h2>
+<h2>🖥 Processor</h2>
 
-<p>Best Emulator Setup For Free Fire</p>
+<select id="cpu">
 
-</div>
+<optgroup label="Intel">
 
+<option>Intel Celeron G530</option>
+<option>Intel Pentium G620</option>
 
+<option>Intel i3 2nd Gen</option>
+<option>Intel i5 2nd Gen</option>
+<option>Intel i7 2nd Gen</option>
 
-<div class="card">
+<option>Intel i3 3rd Gen</option>
+<option>Intel i5 3rd Gen</option>
+<option>Intel i7 3rd Gen</option>
 
-<h2>🔥 AME Optimization</h2>
+<option>Intel i3 4th Gen</option>
+<option>Intel i5 4th Gen</option>
+<option>Intel i7 4th Gen</option>
 
-<p>Windows Performance Optimization</p>
+<option>Intel i5 6th Gen</option>
+<option>Intel i7 6th Gen</option>
 
-</div>
+<option>Intel i5 8th Gen</option>
+<option>Intel i7 8th Gen</option>
 
-<div class="card">
+<option>Intel i5 10th Gen</option>
+<option>Intel i7 10th Gen</option>
 
-<h2>🚀 New Emulator</h2>
+</optgroup>
 
-<p>Best Performance Version</p>
+<optgroup label="AMD">
 
-<a class="btn"
-target="_blank"
-href="https://drive.google.com/file/d/1dCf0cTCrhxvlFB_yevTkKOp58WQl-0mX/view?usp=drive_link">
+<option>Ryzen 3</option>
+<option>Ryzen 5</option>
+<option>Ryzen 7</option>
 
-Download
+</optgroup>
 
-</a>
-
-</div>
-
-</section>
-
-
-
-
-
-
-
-<section class="cards" id="playbook">
-
-
-<h1>🎯 Playbook</h1>
-
-
-<div class="card">
-
-
-<h2>Headshot Playbook</h2>
-
-<p>Best Sensitivity And Control Setup</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="download" id="download">
-
-
-<h1>🔐 Unlock Download</h1>
-
-
-<input type="password" id="pass" placeholder="Enter Password">
-
+</select>
 
 <br><br>
 
+<h2>💾 RAM</h2>
 
-<button onclick="checkPassword()">
-Unlock
+<select id="ram">
+
+<option>2GB</option>
+<option>4GB</option>
+<option>6GB</option>
+<option>8GB</option>
+<option>12GB</option>
+<option>16GB</option>
+<option>32GB</option>
+
+</select>
+
+<br><br>
+<h2>🎮 Graphics Card</h2>
+
+<select id="gpu">
+
+<optgroup label="Intel">
+
+<option>Intel HD 2500</option>
+<option>Intel HD 4000</option>
+<option>Intel HD 4600</option>
+<option>Intel UHD 620</option>
+
+</optgroup>
+
+<optgroup label="NVIDIA">
+
+<option>GT730 DDR5</option>
+<option>GTX750Ti</option>
+<option>GTX1050Ti</option>
+<option>GTX1650</option>
+<option>RTX2060</option>
+<option>RTX3060</option>
+
+</optgroup>
+
+<optgroup label="AMD">
+
+<option>RX570</option>
+<option>RX580</option>
+
+</optgroup>
+
+</select>
+
+<br><br>
+
+<h2>📱 Emulator</h2>
+
+<select id="emu">
+
+<option>MSI 5</option>
+<option>BlueStacks 5</option>
+<option>LDPlayer 9</option>
+<option>MEmu</option>
+
+</select>
+
+<br><br>
+
+<h2>🖥 Resolution</h2>
+<h2>🪟 Windows</h2>
+
+<select id="windows">
+    <option>Windows 7</option>
+    <option>Windows 10</option>
+    <option>Windows 11</option>
+    <option>Atlas OS</option>
+    <option>Ghost Spectre</option>
+</select>
+
+<br><br>
+<h2>🖥 Resolution</h2>
+
+<select id="res">
+    <option>540P</option>
+    <option selected>720P</option>
+    <option>1080P</option>
+</select>
+
+<br><br>
+<h2>🎮 Free Fire Graphics</h2>
+
+<select id="graphics">
+    <option>Smooth</option>
+    <option>Standard</option>
+    <option>Ultra</option>
+</select>
+<h2>⚙️ CPU Cores</h2>
+
+<select id="cores">
+    <option>2 Cores</option>
+    <option selected>4 Cores</option>
+    <option>6 Cores</option>
+    <option>8 Cores</option>
+    <option>12 Cores</option>
+    <option>16 Cores</option>
+</select>
+
+<br><br>
+
+<br><br>
+<h2>🪟 Windows</h2>
+
+<select id="windows">
+<option>Windows 10</option>
+<option>Windows 11</option>
+<option>Atlas OS</option>
+<option>Ghost Spectre</option>
+
+<option>ReviOS</option>
+<option>XOS</option>
+<option>Shappire OS</option>
+</select>
+
+<br><br>
+
+<h2>💽 Storage</h2>
+
+<select id="storage">
+    <option>HDD</option>
+    <option>SSD SATA</option>
+    <option>NVMe SSD</option>
+</select>
+
+<br><br>
+
+<button class="btn" onclick="calculateFPS()">
+🚀 Calculate FPS
+</button>
+</div>
+<div class="result">
+
+<h2>🎮 FPS Result</h2>
+
+<h1 id="fps">Average FPS : --</h1>
+
+<hr>
+
+<p><b>Lobby FPS:</b> <span id="lobby">--</span></p>
+
+<p><b>Battle Royale:</b> <span id="br">--</span></p>
+
+<p><b>Clash Squad:</b> <span id="cs">--</span></p>
+
+<hr>
+
+<h2>⚙ Recommended Settings</h2>
+
+<p id="recommend">Waiting...</p>
+
+<button class="btn" onclick="copySettings()">
+📋 Copy Settings
 </button>
 
+<hr>
 
+<h2>⭐ Performance Rating</h2>
 
-<p id="message"></p>
+<p id="rating">★★★★★</p>
 
+<h2>🏆 Performance Score</h2>
 
+<h1 id="score">0 / 100</h1>
 
+<p id="grade">Grade : -</p>
 
-<div id="downloadBox" style="display:none;">
+<p id="cpuPower">CPU Power : -</p>
 
+<p id="gpuPower">GPU Power : -</p>
 
+<p id="ramPower">RAM Efficiency : -</p>
 
-<h2>⬇ Download Files</h2>
+<hr>
 
+<h2>🎮 Best Emulator</h2>
 
+<p id="bestemu">Waiting...</p>
 
-<a class="btn" target="_blank"
-href="https://drive.google.com/file/d/1GL_2EoKtW1f5EgkBuUs0HDNfbCdUM_ii/view?usp=drive_link">
+<h2>🚀 FPS Status</h2>
 
-MSI 5 Emulator
+<p id="status">Waiting...</p>
 
-</a>
+<h2>FPS Performance</h2>
 
-
-<br><br>
-
-
-
-<a class="btn" target="_blank"
-href="https://drive.google.com/file/d/1gZ0b2UZWV7D-4dGzbDQbiuFL4mA0K-1G/view?usp=drive_link">
-
-AME Optimization
-
-</a>
-
-
-
-<br><br>
-
-
-
-<a class="btn" target="_blank"
-href="https://drive.google.com/file/d/19R18ibg-GNMQxOU2kqTC_uEGZ_s6RXxJ/view?usp=drive_link">
-
-Headshot Playbook
-
-</a>
-
-
+<div class="progress">
+    <div id="bar"></div>
+</div>
 
 </div>
 
+</div>
 
-
-</section>
-
-
-
-
-
-
-
-<section class="download" id="contact">
-
-
-<h1>📞 Contact</h1>
-
-
-
-<a class="btn" target="_blank"
-href="https://discord.gg/FKNedKBwY">
-
-Discord
-
-</a>
-
-
-<br><br>
-
-
-
-<a class="btn" target="_blank"
-href="https://www.facebook.com/?ref=homescreenpwa">
-
-Facebook
-
-</a>
-
-
-<br><br>
-
-
-
-<a class="btn" target="_blank"
-href="https://www.youtube.com/@RIDBYGAMINGSIDE">
-
-YouTube
-
-</a>
-
-
-
-</section>
-
-
-
-
-
-
-
-<footer>
-
-<p>
-© 2026 RIDBY OPTIMIZATION
-</p>
-
-</footer>
-
-
-
+<script src="cpu.js"></script>
+<script src="gpu.js"></script>
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
